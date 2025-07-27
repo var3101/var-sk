@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kariéra | VAR spol. s r. o.</title>
+  <link rel="stylesheet" href="style.css" />
+  <script>
+    function setLanguage(lang) {
+      document.querySelectorAll('.lang').forEach(section => {
+        section.style.display = section.classList.contains(lang) ? 'block' : 'none';
+      });
+    }
+    window.onload = () => setLanguage('sk');
+  </script>
+</head>
+<body>
+  <header>
+    <div id="language-switcher">
+      <button onclick="setLanguage('sk')">SK</button>
+      <button onclick="setLanguage('en')">EN</button>
+      <button onclick="setLanguage('it')">IT</button>
+    </div>
+  </header>
+  <main>
+    <section class="lang sk">
+      <h1>Kariéra</h1>
+
+      <h2>HĽADÁME VODIČA MKD</h2>
+      <p><strong>Podmienky:</strong></p>
+      <ul>
+        <li>vodičské oprávnenie pre skupiny C,E</li>
+        <li>prax 1-2 roky</li>
+        <li>kvalifikačná karta</li>
+        <li>spoľahlivosť</li>
+      </ul>
+      <p>v prípade záujmu vypíšte formulár alebo nás kontaktujte na t. č. +421 905 519 327</p>
+      <p>e-mail: <a href="mailto:var@var.sk">var@var.sk</a></p>
+
+      <h2>ŠPEDITÉR</h2>
+      <p><strong>Podmienky:</strong></p>
+      <ul>
+        <li>anglický jazyk, taliansky jazyk výhodou</li>
+        <li>komunikatívnosť</li>
+        <li>schopnosť samostatne pracovať</li>
+      </ul>
+      <p>v prípade záujmu vypíšte formulár alebo nás kontaktujte na t. č. +421 905 519 327</p>
+      <p>e-mail: <a href="mailto:var@var.sk">var@var.sk</a></p>
+
+      <form action="#" method="post">
+        <label for="name">Meno</label><br />
+        <input type="text" id="name" name="name" required /><br />
+
+        <label for="email">E-mail</label><br />
+        <input type="email" id="email" name="email" required /><br />
+
+        <label for="message">Správa</label><br />
+        <textarea id="message" name="message" rows="5" required></textarea><br />
+
+        <button type="submit">Odoslať</button>
+      </form>
+    </section>
+
+    <section class="lang en" style="display:none;">
+      <h1>Career</h1>
+
+      <h2>WE ARE LOOKING FOR A TRUCK DRIVER (MKD)</h2>
+      <p><strong>Requirements:</strong></p>
+      <ul>
+        <li>Driver’s license for categories C, E</li>
+        <li>1-2 years experience</li>
+        <li>Qualification card</li>
+        <li>Reliability</li>
+      </ul>
+      <p>If interested, please fill in the form or contact us at +421 905 519 327</p>
+      <p>Email: <a href="mailto:var@var.sk">var@var.sk</a></p>
+
+      <h2>FORWARDER</h2>
+      <p><strong>Requirements:</strong></p>
+      <ul>
+        <li>English language, Italian language is an advantage</li>
+        <li>Communication skills</li>
+        <li>Ability to work independently</li>
+      </ul>
+      <p>If interested, please fill in the form or contact us at +421 905 519 327</p>
+      <p>Email: <a href="mailto:var@var.sk">var@var.sk</a></p>
+
+      <form action="#" method="post">
+        <label for="name">Name</label><br />
+        <input type="text" id="name" name="name" required /><br />
+
+        <label for="email">Email</label><br />
+        <input type="email" id="email" name="email" required /><br />
+
+        <label for="message">Message</label><br />
+        <textarea id="message" name="message" rows="5" required></textarea><br />
+
+        <button type="submit">Send</button>
+      </form>
+    </section>
+
+    <section class="lang it" style="display:none;">
+      <h1>Carriera</h1>
+
+      <h2>CERCHIAMO AUTISTA MKD</h2>
+      <p><strong>Requisiti:</strong></p>
+      <ul>
+        <li>Patente per categorie C, E</li>
+        <li>1-2 anni di esperienza</li>
+        <li>Carta di qualificazione</li>
+        <li>Affidabilità</li>
+      </ul>
+      <p>Se interessati, compilate il modulo oppure contattateci al numero +421 905 519 327</p>
+      <p>Email: <a href="mailto:var@var.sk">var@var.sk</a></p>
+
+      <h2>SPEDIZIONIERE</h2>
+      <p><strong>Requisiti:</strong></p>
+      <ul>
+        <li>Inglese, Italiano è un vantaggio</li>
+        <li>Capacità comunicative</li>
+        <li>Capacità di lavorare in autonomia</li>
+      </ul>
+      <p>Se interessati, compilate il modulo oppure contattateci al numero +421 905 519 327</p>
+      <p>Email: <a href="mailto:var@var.sk">var@var.sk</a></p>
+
+      <form action="#" method="post">
+        <label for="name">Nome</label><br />
+        <input type="text" id="name" name="name" required /><br />
+
+        <label for="email">Email</label><br />
+        <input type="email" id="email" name="email" required /><br />
+
+        <label for="message">Messaggio</label><br />
+        <textarea id="message" name="message" rows="5" required></textarea><br />
+
+        <button type="submit">Invia</button>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
