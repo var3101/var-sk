@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kontakt | VAR spol. s r. o.</title>
+  <link rel="stylesheet" href="style.css" />
+  <script>
+    function setLanguage(lang) {
+      document.querySelectorAll('.lang').forEach(section => {
+        section.style.display = section.classList.contains(lang) ? 'block' : 'none';
+      });
+    }
+    window.onload = () => setLanguage('sk');
+  </script>
+</head>
+<body>
+  <header>
+    <div id="language-switcher">
+      <button onclick="setLanguage('sk')">SK</button>
+      <button onclick="setLanguage('en')">EN</button>
+      <button onclick="setLanguage('it')">IT</button>
+    </div>
+  </header>
+  <main>
+    <section class="lang sk">
+      <h1>Kontakt</h1>
+      <p><strong>VAR spol. s r. o.</strong></p>
+      <p>Na Bystričku 14</p>
+      <p>03601 Martin</p>
+      <p>SLOVENSKÁ REPUBLIKA</p>
+      <p>IČO: 36369268</p>
+      <p>DIČ: 2020117946</p>
+      <p>IČ DPH: SK2020117946</p>
+      <p>Spoločnosť je zapísaná v Obchodnom registri Okresného súdu Žilina</p>
+      <p>Oddiel: Sro, vložka číslo: 10121/L</p>
+      <h2>Konateľ spoločnosti</h2>
+      <p>Rastislav Mäčko</p>
+      <p>email: <a href="mailto:var@var.sk">var@var.sk</a></p>
+      <p>Tel. +421 43 4302 005</p>
+      <h2>Kde nás nájdete</h2>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!..." width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+
+    <section class="lang en" style="display:none;">
+      <h1>Contact</h1>
+      <p><strong>VAR spol. s r. o.</strong></p>
+      <p>Na Bystričku 14</p>
+      <p>03601 Martin</p>
+      <p>SLOVAKIA</p>
+      <p>Company ID: 36369268</p>
+      <p>Tax ID: 2020117946</p>
+      <p>VAT ID: SK2020117946</p>
+      <p>The company is registered in the Commercial Register of the District Court Žilina</p>
+      <p>Section: Sro, Insert number: 10121/L</p>
+      <h2>Company Executive</h2>
+      <p>Rastislav Mäčko</p>
+      <p>email: <a href="mailto:var@var.sk">var@var.sk</a></p>
+      <p>Phone: +421 43 4302 005</p>
+      <h2>Where to find us</h2>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!..." width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+
+    <section class="lang it" style="display:none;">
+      <h1>Contatto</h1>
+      <p><strong>VAR spol. s r. o.</strong></p>
+      <p>Na Bystričku 14</p>
+      <p>03601 Martin</p>
+      <p>SLOVACCHIA</p>
+      <p>ID azienda: 36369268</p>
+      <p>ID fiscale: 2020117946</p>
+      <p>IVA: SK2020117946</p>
+      <p>L'azienda è registrata nel Registro Commerciale del Tribunale Distrettuale di Žilina</p>
+      <p>Sezione: Sro, numero d'iscrizione: 10121/L</p>
+      <h2>Amministratore delegato</h2>
+      <p>Rastislav Mäčko</p>
+      <p>email: <a href="mailto:var@var.sk">var@var.sk</a></p>
+      <p>Telefono: +421 43 4302 005</p>
+      <h2>Dove siamo</h2>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!..." width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+  </main>
+</body>
+</html>
