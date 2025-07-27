@@ -2,58 +2,48 @@
 <html lang="sk">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Prepravný poriadok | VAR spol. s r. o.</title>
   <link rel="stylesheet" href="style.css" />
-  <script>
-    function setLanguage(lang) {
-      document.querySelectorAll('.lang').forEach(section => {
-        section.style.display = section.classList.contains(lang) ? 'block' : 'none';
-      });
-    }
-    window.onload = () => setLanguage('sk');
-  </script>
-  <style>
-    main {
-      max-width: 900px;
-      margin: 20px auto;
-      text-align: center;
-    }
-    iframe {
-      width: 100%;
-      height: 80vh;
-      border: none;
-      box-shadow: 0 0 10px rgba(0,0,0,0.3);
-      border-radius: 8px;
-    }
-  </style>
 </head>
 <body>
-  <header>
-    <div id="language-switcher">
-      <button onclick="setLanguage('sk')">SK</button>
-      <button onclick="setLanguage('en')">EN</button>
-      <button onclick="setLanguage('it')">IT</button>
+  <header class="header">
+    <div class="container">
+      <div class="logo">VAR spol. s r. o.</div>
+      <nav class="nav">
+        <a href="index.html">Domov</a>
+        <a href="o_nas.html">O nás</a>
+        <a href="sluzby.html">Služby</a>
+        <a href="kontakt.html">Kontakt</a>
+        <a href="kariera.html">Kariéra</a>
+        <a href="cenova_ponuka.html">Cenová ponuka</a>
+        <a href="prepravny_poriadok.html" class="active">Prepravný poriadok</a>
+      </nav>
     </div>
   </header>
-  <main>
-    <section class="lang sk">
-      <h1>Prepravný poriadok</h1>
-      <iframe src="https://docs.google.com/document/d/e/2PACX-1vTMLT4WtH5pjx....pub?embedded=true"></iframe>
-      <p>Dokument je dostupný len na čítanie, nie je možné ho sťahovať ani kopírovať.</p>
-    </section>
 
-    <section class="lang en" style="display:none;">
-      <h1>Transport Regulations</h1>
-      <iframe src="https://docs.google.com/document/d/e/2PACX-1vTMLT4WtH5pjx....pub?embedded=true"></iframe>
-      <p>The document is read-only and cannot be downloaded or copied.</p>
-    </section>
+  <main class="main-content">
+    <section class="section">
+      <div class="container">
+        <h1>Prepravný poriadok</h1>
+        <p>Nižšie nájdete dokument s platným prepravným poriadkom našej spoločnosti. Dokument je určený len na čítanie.</p>
 
-    <section class="lang it" style="display:none;">
-      <h1>Regolamento di trasporto</h1>
-      <iframe src="https://docs.google.com/document/d/e/2PACX-1vTMLT4WtH5pjx....pub?embedded=true"></iframe>
-      <p>Il documento è solo in lettura e non può essere scaricato o copiato.</p>
+        <div class="iframe-container" style="position:relative;padding-bottom:75%;height:0;overflow:hidden;">
+          <iframe 
+            src="https://docs.google.com/document/d/19MA5oQp7FfXae5BCnRDK2SSpf6tXV69C/preview" 
+            frameborder="0" 
+            style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;" 
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
     </section>
   </main>
+
+  <footer class="footer">
+    <div class="container">
+      &copy; 2025 VAR spol. s r. o. Všetky práva vyhradené.
+    </div>
+  </footer>
 </body>
 </html>
