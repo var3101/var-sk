@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Služby | VAR spol. s r. o.</title>
+  <link rel="stylesheet" href="style.css" />
+  <script>
+    function setLanguage(lang) {
+      document.querySelectorAll('.lang').forEach(section => {
+        section.style.display = section.classList.contains(lang) ? 'block' : 'none';
+      });
+    }
+    window.onload = () => setLanguage('sk');
+  </script>
+</head>
+<body>
+  <header>
+    <div id="language-switcher">
+      <button onclick="setLanguage('sk')">SK</button>
+      <button onclick="setLanguage('en')">EN</button>
+      <button onclick="setLanguage('it')">IT</button>
+    </div>
+  </header>
+  <main>
+    <section class="lang sk">
+      <h1>Naše služby</h1>
+      <h2>Medzinárodná preprava tovaru</h2>
+      <h2>Zasielateľstvo</h2>
+      <p>Spoločnosť VAR spol. s r. o. ponúka široké spektrum služieb v oblasti dopravy. Naša spoločnosť disponuje moderným vozovým parkom a kvalifikovaným personálom, čo nám umožňuje poskytovať kvalitné a spoľahlivé služby pre našich zákazníkov. Jednou z našich hlavných služieb je preprava tovaru so špecializáciou na Taliansko. Ďalšou našou činnosťou je zasielateľstvo, takže Vám vieme zabezpečiť prepravu Vašich tovarov v rámci celej Európy. V prípade Vášho záujmu prosím požiadajte o vypracovanie cenovej ponuky.</p>
+      <button onclick="location.href='cenova_ponuka.html'">CENOVÁ PONUKA</button>
+    </section>
+
+    <section class="lang en" style="display:none;">
+      <h1>Our Services</h1>
+      <h2>International cargo transport</h2>
+      <h2>Forwarding</h2>
+      <p>VAR spol. s r. o. offers a wide range of services in transportation. Our company has a modern fleet and qualified staff, enabling us to provide quality and reliable services to our customers. One of our main services is cargo transport specialized in Italy. Another activity is forwarding, so we can arrange the transportation of your goods throughout Europe. If interested, please request a price quote.</p>
+      <button onclick="location.href='cenova_ponuka.html'">PRICE QUOTE</button>
+    </section>
+
+    <section class="lang it" style="display:none;">
+      <h1>I nostri servizi</h1>
+      <h2>Trasporto internazionale di merci</h2>
+      <h2>Spedizioni</h2>
+      <p>VAR spol. s r. o. offre un'ampia gamma di servizi nel settore dei trasporti. La nostra azienda dispone di una flotta moderna e personale qualificato, che ci consente di fornire servizi di qualità e affidabili ai nostri clienti. Uno dei nostri principali servizi è il trasporto di merci specializzato per l'Italia. Un'altra nostra attività è la spedizione, quindi possiamo organizzare il trasporto delle vostre merci in tutta Europa. Se interessati, richiedete un preventivo.</p>
+      <button onclick="location.href='cenova_ponuka.html'">PREVENTIVO</button>
+    </section>
+  </main>
+</body>
+</html>
