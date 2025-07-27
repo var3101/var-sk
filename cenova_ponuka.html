@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cenová ponuka | VAR spol. s r. o.</title>
+  <link rel="stylesheet" href="style.css" />
+  <script>
+    function setLanguage(lang) {
+      document.querySelectorAll('.lang').forEach(section => {
+        section.style.display = section.classList.contains(lang) ? 'block' : 'none';
+      });
+    }
+    window.onload = () => setLanguage('sk');
+  </script>
+</head>
+<body>
+  <header>
+    <div id="language-switcher">
+      <button onclick="setLanguage('sk')">SK</button>
+      <button onclick="setLanguage('en')">EN</button>
+      <button onclick="setLanguage('it')">IT</button>
+    </div>
+  </header>
+  <main>
+    <section class="lang sk">
+      <h1>Cenová ponuka</h1>
+      <p>Tu môžete požiadať o cenovú ponuku:</p>
+
+      <form action="#" method="post">
+        <label for="company">Názov vašej spoločnosti</label><br />
+        <input type="text" id="company" name="company" required /><br />
+
+        <label for="name">Vaše meno</label><br />
+        <input type="text" id="name" name="name" required /><br />
+
+        <label for="email">Váš E-mail</label><br />
+        <input type="email" id="email" name="email" required /><br />
+
+        <label for="subject">Predmet</label><br />
+        <input type="text" id="subject" name="subject" required /><br />
+
+        <label for="message">Správa</label><br />
+        <textarea id="message" name="message" rows="5" required></textarea><br />
+
+        <button type="submit">Poslať žiadosť</button>
+      </form>
+    </section>
+
+    <section class="lang en" style="display:none;">
+      <h1>Price Quote</h1>
+      <p>You can request a price quote here:</p>
+
+      <form action="#" method="post">
+        <label for="company">Your company name</label><br />
+        <input type="text" id="company" name="company" required /><br />
+
+        <label for="name">Your name</label><br />
+        <input type="text" id="name" name="name" required /><br />
+
+        <label for="email">Your E-mail</label><br />
+        <input type="email" id="email" name="email" required /><br />
+
+        <label for="subject">Subject</label><br />
+        <input type="text" id="subject" name="subject" required /><br />
+
+        <label for="message">Message</label><br />
+        <textarea id="message" name="message" rows="5" required></textarea><br />
+
+        <button type="submit">Send Request</button>
+      </form>
+    </section>
+
+    <section class="lang it" style="display:none;">
+      <h1>Preventivo</h1>
+      <p>Puoi richiedere un preventivo qui:</p>
+
+      <form action="#" method="post">
+        <label for="company">Nome della tua azienda</label><br />
+        <input type="text" id="company" name="company" required /><br />
+
+        <label for="name">Il tuo nome</label><br />
+        <input type="text" id="name" name="name" required /><br />
+
+        <label for="email">La tua E-mail</label><br />
+        <input type="email" id="email" name="email" required /><br />
+
+        <label for="subject">Oggetto</label><br />
+        <input type="text" id="subject" name="subject" required /><br />
+
+        <label for="message">Messaggio</label><br />
+        <textarea id="message" name="message" rows="5" required></textarea><br />
+
+        <button type="submit">Invia richiesta</button>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
