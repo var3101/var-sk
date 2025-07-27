@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>VAR spol. s r. o.</title>
+  <link rel="stylesheet" href="style.css" />
+  <script>
+    function setLanguage(lang) {
+      document.querySelectorAll('.lang').forEach(section => {
+        section.style.display = section.classList.contains(lang) ? 'block' : 'none';
+      });
+    }
+    window.onload = () => setLanguage('sk');
+  </script>
+</head>
+<body>
+  <header>
+    <div id="language-switcher">
+      <button onclick="setLanguage('sk')">SK</button>
+      <button onclick="setLanguage('en')">EN</button>
+      <button onclick="setLanguage('it')">IT</button>
+    </div>
+  </header>
+  <main>
+    <!-- O nás -->
+    <section class="lang sk">
+      <h1>O nás</h1>
+      <h2>MEDZINÁRODNÁ KAMIÓNOVÁ DOPRAVA A ZASIELATEĽSTVO</h2>
+      <p>Vitajte na stránke spoločnosti VAR spol. s r. o.</p>
+      <p>Spoločnosť VAR spol. s r. o. je slovenská dopravná spoločnosť s dlhoročnou tradíciou. Od svojho vzniku v roku 1997 sme sa zameriavali na poskytovanie kvalitných a spoľahlivých dopravných služieb pre našich zákazníkov. Našou prioritou je spokojnosť a bezpečnosť. Preto všetky naše vozidlá sú pravidelne servisované a udržiavané v najlepšom technickom stave. Sme hrdí na našich skúsených a kvalifikovaných vodičov, ktorí majú vynikajúce znalosti cestnej premávky a vždy sa snažia byť rýchli a efektívni.</p>
+    </section>
+
+    <!-- About us -->
+    <section class="lang en" style="display:none;">
+      <h1>About us</h1>
+      <h2>INTERNATIONAL TRUCK TRANSPORT AND FORWARDING</h2>
+      <p>Welcome to the website of VAR spol. s r. o.</p>
+      <p>VAR spol. s r. o. is a Slovak transport company with a long tradition. Since its establishment in 1997, we have focused on providing quality and reliable transport services for our customers. Our priority is satisfaction and safety. That is why all our vehicles are regularly serviced and maintained in top technical condition. We are proud of our experienced and qualified drivers who have excellent knowledge of road traffic and always strive to be fast and efficient.</p>
+    </section>
+
+    <!-- Chi siamo -->
+    <section class="lang it" style="display:none;">
+      <h1>Chi siamo</h1>
+      <h2>TRASPORTO INTERNAZIONALE SU CAMION E SPEDIZIONI</h2>
+      <p>Benvenuti sul sito di VAR spol. s r. o.</p>
+      <p>VAR spol. s r. o. è un'azienda di trasporti slovacca con una lunga tradizione. Dalla sua fondazione nel 1997, ci siamo concentrati sulla fornitura di servizi di trasporto di qualità e affidabili per i nostri clienti. La nostra priorità è la soddisfazione e la sicurezza. Per questo motivo tutti i nostri veicoli sono regolarmente revisionati e mantenuti nelle migliori condizioni tecniche. Siamo orgogliosi dei nostri conducenti esperti e qualificati che hanno un'eccellente conoscenza della circolazione stradale e si sforzano sempre di essere veloci ed efficienti.</p>
+    </section>
+
+    <!-- Sem môžeš postupne pridávať ďalšie podstránky -->
+  </main>
+</body>
+</html>
